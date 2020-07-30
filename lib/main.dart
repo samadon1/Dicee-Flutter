@@ -35,6 +35,9 @@ class Page extends StatefulWidget {
 class _PageState extends State<Page> {
   int rightDiceNumber = 1;
   int leftDiceNumber = 1;
+  RandomDice(){
+    RandomDice(){}
+  }
   @override
   Widget build(BuildContext context) {
 
@@ -54,11 +57,7 @@ class _PageState extends State<Page> {
           Expanded(
               child: FlatButton(
                 onPressed: (){
-                  setState(() {
-                    // ignore: unnecessary_statements
-                    rightDiceNumber = Random().nextInt(6) + 1;
-                    leftDiceNumber = Random().nextInt(6) + 1;
-                  });
+                  RandomDice(){}
                 },
                   child: Image(image: AssetImage('images/dice$rightDiceNumber.png'), color: Colors.white,))),
         ],

@@ -47,6 +47,7 @@ class _PageState extends State<Page> {
                     setState(() {
                       // ignore: unnecessary_statements
                       leftDiceNumber = Random().nextInt(6) + 1;
+                      rightDiceNumber = Random().nextInt(6) + 1;
                     });
                   },
                   child: Image(image: AssetImage('images/dice$leftDiceNumber.png'),color: Colors.white,))),
@@ -56,6 +57,7 @@ class _PageState extends State<Page> {
                   setState(() {
                     // ignore: unnecessary_statements
                     rightDiceNumber = Random().nextInt(6) + 1;
+                    leftDiceNumber = Random().nextInt(6) + 1;
                   });
                 },
                   child: Image(image: AssetImage('images/dice$rightDiceNumber.png'), color: Colors.white,))),

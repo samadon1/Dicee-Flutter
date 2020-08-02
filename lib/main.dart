@@ -37,9 +37,9 @@ class _PageState extends State<Page> {
   int leftDiceNumber = 1;
   void RandomDice(){
     setState(() {
-                      // ignore: unnecessary_statements
-                      leftDiceNumber = Random().nextInt(6) + 1;
-                      rightDiceNumber = Random().nextInt(6) + 1;
+          // ignore: unnecessary_statements
+          leftDiceNumber = Random().nextInt(6) + 1;
+          rightDiceNumber = Random().nextInt(6) + 1;
                     });
                   },
   }
